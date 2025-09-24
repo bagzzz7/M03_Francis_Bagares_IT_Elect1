@@ -1,7 +1,7 @@
 // CounterApp.js
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import ColorChangerApp from "./ColorChangerApp"; // ⬅️ import here
+import ColorChangerApp from "./ColorChangerApp"; 
 
 export default function CounterApp() {
   const [count, setCount] = useState(0);
@@ -17,7 +17,7 @@ export default function CounterApp() {
         <Button title="Decrement" onPress={decrement} />
       </View>
 
-      {/* ⬅️ Call the ColorChangerApp here */}
+      
       <ColorChangerApp />
     </View>
   );
