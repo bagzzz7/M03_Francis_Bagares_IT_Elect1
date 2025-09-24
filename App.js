@@ -1,20 +1,18 @@
-import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import Messenger from './Messenger';
-import CommentSection from './CommentSection';
-
+import {View,Text,StyleSheet} from 'react-native';
+import CounterApp from './CounterApp.js';
 export default function App() {
+
+
+
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Messenger />
-      <CommentSection />
-    </ScrollView>
-  );
+   <View style={styles.container}>
+   <CounterApp/>
+   </View>
+   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    alignItems: 'center',
-  },
+  container:{
+    flex:1
+  }
 });
